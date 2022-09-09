@@ -2,7 +2,7 @@ import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { Stacked, Pie, Button, SparkLine } from '../components';
-import { earningData, SparkLineAreaData, ecomPieChartDat } from '../data/dummy';
+import { earningData, SparklineAreaData, ecomPieChartDat } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 const Ecommerce = () => {
@@ -44,7 +44,7 @@ const Ecommerce = () => {
                                     {item.percentage}
                                 </span>
                             </p>
-                            <p class="text-sm text-gray-400 mt-1"
+                            <p className='text-sm text-gray-400 mt-1'
                             >{item.title}</p>
                         </div>
                     ))}
@@ -86,6 +86,17 @@ const Ecommerce = () => {
                                 <span className='text-xl font-semibold'>$43,438</span>
                             </p>
                             <p className='text-gray-500 text-sm' >Expense</p>
+                        </div>
+                        <div className='mt-5'>
+                            <SparkLine
+                                currentColor="blue"
+                                id="line-sparkline"
+                                type="Line"
+                                height="80px"
+                                width="250px"
+                                data={SparklineAreaData}
+                                color="blue"
+                            />
                         </div>
                     </div>
                 </div>
