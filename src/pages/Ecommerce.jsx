@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { Stacked, Pie, Button, SparkLine } from '../components';
@@ -98,6 +98,20 @@ const Ecommerce = () => {
                                 color="blue"
                             />
                         </div>
+                        <div className='mt-10'>
+                            <Button
+                                color="white"
+                                text="Download Report"
+                                bgColor="blue"
+                                borderRadius="10px"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <Stacked
+                            width="320px"
+                            height="360px"
+                        />
                     </div>
                 </div>
             </div>
